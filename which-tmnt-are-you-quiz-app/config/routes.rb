@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :questions, only: [:index, :show]
-  resources :choices
 
+  root 'application#index'
+
+  resources :questions, only: [:index, :show]
+  resources :choices, only: [:index, :show]
 end
