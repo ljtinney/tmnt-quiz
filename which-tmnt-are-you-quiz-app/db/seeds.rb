@@ -39,7 +39,7 @@ q9 = Question.create(content: "You are approached by an enemy, how do you react?
   Choice.create(question: q9, text: text)
 
 q10 = Question.create(content: "Which type of music would you listen to first?")
-["Alternative", "Indie Rock", "Gangster Rap", "Punk Rock", "Jazz"].each do |text|
+["Alternative", "Indie Rock", "Gangster Rap", "Punk Rock"].each do |text|
   Choice.create(question: q10, text: text)
 
 q11 = Question.create(content: "Which American President is your Favorite?")
