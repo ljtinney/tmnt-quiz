@@ -1,9 +1,27 @@
+/* CSS IDEA - on last page, turn cursor into the TMNT Character */
+/* Maybe use the TMNT finger point as the finger pointer */
+
+/* Individual Turtles Color Codes
+
+Current:
+Leo Skin: #8A9E3D 138 158 61
+Leo Mask: #255D98 37 93 152
+
+Don Skin: #A5A744 165 167 68
+Don Mask: #6F6B9D 111 107 157
+
+Mike Skin: #3C7059 60 112 89
+Mike Mask: #F19A3D 241 154 61
+
+Raph Skin: #1C5D35 28 93 53
+Raph Mask: #E8413B 232 65 59 */
+
 body {
   background-color: #413D3D;
 }
 
 .grid {
-  width: 600px;
+  width: 700px;
   height: 500px;
   margin: 0 auto;
   background-color: #000000;
@@ -40,10 +58,10 @@ body {
 
 #btn0, #btn1, #btn2, #btn3 {
   background-color: #8FD129;
-  width: 250px;
+  width: 300px;
   font-size: 20px;
   color: #fff;
-  border: 1px solid #1D3C6A;
+  border: 2px solid #ED1C24;
   margin: 10px 40px 10px 0px;
   padding: 10px 10px;
 }
@@ -58,6 +76,6 @@ body {
 }
 
 #progress {
-  color: #2b2b2b;
+  color: #8FD129;
   font-size: 18px;
 }
