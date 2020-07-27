@@ -1,3 +1,26 @@
+// const BASE_URL = "http://localhost:3000"
+// const QUESTIONS_URL = `${BASE_URL}/questions`
+// const btn1 = document.getElementById("btn0")
+// const btn2 = document.getElementById("btn1")
+// const btn3 = document.getElementById("btn2")
+// const btn4 = document.getElementById("btn3")
+
+// Before page loads it has already fetched all the questions & choices.
+
+// // When I click on a selection it saves the selection, adds the hidden number total with the previous number total, then fetches the  the next question & it's choices.
+
+// document.addEventListener('click', () => {
+//   userSelection()
+// })
+
+// function userSelection() {
+// const btn1 = document.getElementById("btn0")
+// const btn2 = document.getElementById("btn1")
+// const btn3 = document.getElementById("btn2")
+// const btn4 = document.getElementById("btn3")
+
+// }
+
 function Quiz(questions) {
   this.score = 0;
   this.questions = questions;
@@ -8,22 +31,22 @@ Quiz.prototype.getQuestionIndex = function() {
   return this.questions[this.questionIndex];
 }
 
-// Replace this function with one that tallys up totals depending on which choice is selected.
-// Quiz.prototype.guess = function(answer) {
-//   if(this.getQuestionIndex().isCorrectAnswer(answer)) {
-//       this.score++;
-// //   }
-
-//   this.questionIndex++;
-// }
+Quiz.prototype.guess = function(answer) {
+  if(this.getQuestionIndex().isCorrectAnswer(answer)) {
+      this.score++;
+  }
+  this.questionIndex++;
+}
 
 Quiz.prototype.isEnded = function() {
   return this.questionIndex === this.questions.length;
 }
 
-function Question(content, choices) {
-  this.content = content;
+
+function Question(text, choices, answer) {
+  this.text = text;
   this.choices = choices;
+  this.answer = answer;
 }
 
 Question.prototype.isCorrectAnswer = function(choice) {
@@ -38,7 +61,7 @@ function populate() {
   else {
       // show question
       var element = document.getElementById("question");
-      element.innerHTML = quiz.getQuestionIndex().content;
+      element.innerHTML = quiz.getQuestionIndex().text;
 
       // show options
       var choices = quiz.getQuestionIndex().choices;
@@ -60,7 +83,6 @@ function guess(id, guess) {
   }
 };
 
-
 function showProgress() {
   var currentQuestionNumber = quiz.questionIndex + 1;
   var element = document.getElementById("progress");
@@ -76,21 +98,21 @@ function showScores() {
 
 // create questions here
 var questions = [
-  new Question("Question1", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice5"),
-  new Question("Question2", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice5"),
-  new Question("Question3", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question4", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question5", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question6", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question7", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question8", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question9", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question10", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question11", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question12", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question13", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice5"),
-  new Question("Question14", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice5"),
-  new Question("Question15", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice5")
+  new Question("Question1", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
+  new Question("Question2", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
+  new Question("Question3", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question4", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question5", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question6", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question7", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question8", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question9", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question10", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question11", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question12", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question13", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+  new Question("Question14", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
+  new Question("Question15", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1")
 ];
 
 // create quiz
