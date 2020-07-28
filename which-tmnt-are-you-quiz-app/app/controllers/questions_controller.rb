@@ -1,14 +1,25 @@
 class QuestionsController < ApplicationController
- def index
-  questions = Question.all
-  render json: question.to_json(
-    only: [:id, :context],
-    include: {
-      choices: {
-        only: [:id, :text]
+  def index
+    questions = Question.all
+    render json: questions.to_json(
+      only: [:id, :content],
+      include: {
+        choices: {
+          only: [:id, :text, :answer]
+        }
       }
+    )
+  end
+
+  def create
+    question = Question.new(content: params[:content])
+  end
+
+  def show
+    question = Question.find_by(id: params[:id])
+    options = {
+      include: [:choices]
     }
-  )
   end
 end
 

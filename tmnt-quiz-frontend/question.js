@@ -42,7 +42,6 @@ Quiz.prototype.isEnded = function() {
   return this.questionIndex === this.questions.length;
 }
 
-
 function Question(text, choices, answer) {
   this.text = text;
   this.choices = choices;
@@ -52,7 +51,6 @@ function Question(text, choices, answer) {
 Question.prototype.isCorrectAnswer = function(choice) {
   return this.answer === choice;
 }
-
 
 function populate() {
   if(quiz.isEnded()) {
@@ -68,9 +66,9 @@ function populate() {
       for(var i = 0; i < choices.length; i++) {
           var element = document.getElementById("choice" + i);
           element.innerHTML = choices[i];
+          // element.dataset.answer = choices["answer"]
           guess("btn" + i, choices[i]);
       }
-
       showProgress();
   }
 };
@@ -97,26 +95,37 @@ function showScores() {
 };
 
 // create questions here
-var questions = [
-  new Question("Question1", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
-  new Question("Question2", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
-  new Question("Question3", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question4", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question5", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question6", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question7", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question8", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question9", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question10", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question11", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question12", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question13", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-  new Question("Question14", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
-  new Question("Question15", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1")
-];
+// fetch(/questions) to fill out this array
+// this endpoint will also need choices for each question
+
+function fetchQuestions() {
+  fetch("http://localhost:3000/questions")
+  .then(resp => resp.json())
+  .then(function(questions) {
+  })
+}
+
+
+// var questions = [
+//   new Question("Which color mask does Mikey wear?", ["Blue", "Purple","Red", "Orange"], "Orange"),
+//   new Question("Question2", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
+//   new Question("Question3", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question4", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question5", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question6", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question7", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question8", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question9", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question10", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question11", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question12", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question13", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
+//   new Question("Question14", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
+//   new Question("Question15", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1")
+// ];
 
 // create quiz
-var quiz = new Quiz(questions);
+var quiz = new Quiz(fetchQuestions());
 
 // display quiz
 populate();
