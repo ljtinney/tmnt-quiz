@@ -1,73 +1,114 @@
 Question.destroy_all
 Choice.destroy_all
 
-q1 = Question.create(content: "What is your favorite color?")
-["Blue", "Purple", "Red", "Orange"].each do |text|
-  Choice.create(question: q1, text: text)
+q1 = Question.create(content: "Which weapons is Leonardo known for using?")
+{"Twin Ninjatos": true, "Twin Katanas": false, "Twin Swords": false, "Twin Machetes": false}.each do |text, answer|
+  Choice.create(question: q1, text: text, answer: answer)
 end
 
-q2 = Question.create(content: "Which hobby is your favorite?")
-["Meditating", "Reading", "Working Out", "Partying"].each do |text|
-  Choice.create(question: q2, text: text)
+q2 = Question.create(content: "Which weapons is Raphael known for using?")
+{"Twin Sai": true, "Sai": false, "Twin Daggers": false, "Smoke Bombs": false}.each do |text, answer|
+  Choice.create(question: q2, text: text, answer: answer)
 end
 
-q3 = Question.create(content: "Which type of Pizza is your favorite?")
-["Pepperoni & Green Peppers", "Truffle Pizza (Mixed Mushrooms, Vegan Mozzarella, Vegan Fontina, White Truffle Oil)", "Supreme (Olives, Green Pepper, Sausage, Pepperoni, Garlic)", "Pineapple & Ham"].each do |text|
-  Choice.create(question: q3, text: text)
+q3 = Question.create(content: "1990's 'Teenage Mutant Ninja Turtles' was the highest-grossing independent film of all time. How much did it gross in the DOMESTIC box office?")
+{"$135 million": true, "$189 million": false, "$98 million": false, "$26 million": false}.each do |text, answer|
+  Choice.create(question: q3, text: text, answer: answer)
 end
 
-q4 = Question.create(content: "Which type of Pet are you most likely to choose?")
-["Bird", "Salamander/Newt", "I don't want pets", "Ferret"].each do |text|
-  Choice.create(question: q4, text: text)
+q4 = Question.create(content: "Which television station does April O'Neil work for?")
+{"Channel 6": true, "Channel 3": false, "Channel 2": false, "Channel 7": false}.each do |text, answer|
+  Choice.create(question: q4, text: text, answer: answer)
 end
 
-q5 = Question.create(content: "What is your favorite Batman Villan?")
-["Harvey Dent ('Two Face')", "Edward Nigma ('Riddler')", "Bane", "Joker"].each do |text|
-  Choice.create(question: q5, text: text)
+q5 = Question.create(content: "What’s the name of the pizza guy-turned side kick in 'Teenage Mutant Ninja Turtles II: Secret of the Ooze'?")
+{"Keno": true, "Quiona": false, "Chino": false, "Bruce": false}.each do |text, answer|
+  Choice.create(question: q5, text: text, answer: answer)
 end
 
-q6 = Question.create(content: "Which subject in High School was your favorite?")
-["Foreign Cultures", "MetaPhysics", "Phys Ed", "Drama"].each do |text|
-  Choice.create(question: q6, text: text)
+q6 = Question.create(content: "Who wrote the Teenage Mutant Ninja Turtles theme song for the original cartoon series?")
+{"Chuck Lorre": true, "Jimi Hendrix": false, "Mark Mothersbaugh": false, "Bob Mothersbaugh": false}.each do |text, answer|
+  Choice.create(question: q6, text: text, answer: answer)
 end
 
-q7 = Question.create(content: "Which is your favorite artist?")
-["Leonardo Di Vinci", "Donatello", "Raphael", "Michaelangelo"].each do |text|
-  Choice.create(question: q7, text: text)
+q7 = Question.create(content: "In the comic books, the turtles once had all the same color bandana. Which color bandana was this?")
+{"Red": true, "Blue": false, "Purple": false, "Black": false}.each do |text, answer|
+  Choice.create(question: q7, text: text, answer: answer)
 end
 
-q8 = Question.create(content: "Which TMNT character is most likely to be your sidekick?")
-["Splinter", "Casey Jones", "Chino (Pizza Delivery Guy)", "April O'Niel"].each do |text|
-  Choice.create(question: q8, text: text)
+q8 = Question.create(content: "Which YEAR did the turtles get their own individually colored bandanas")
+{"1988": true, "1989": false, "1990": false, "1984": false}.each do |text, answer|
+  Choice.create(question: q8, text: text, answer: answer)
 end
 
-q9 = Question.create(content: "You are approached by an enemy, how do you react?")
-["Study your opponent & their movements, concentrate on them.", "Quickly strategize how to use your environment around you.", "Welcome an all out brawl.", "Try to charm your enemy to lower tensions."].each do |text|
-  Choice.create(question: q9, text: text)
+q9 = Question.create(content: "What year was the very first issue of the 'Teenage Mutant Ninja Turtles' comic book published?")
+{"1984": true, "1987": false, "1988": false, "1990": false}.each do |text, answer|
+  Choice.create(question: q9, text: text, answer: answer)
 end
 
-q10 = Question.create(content: "Which type of music would you listen to first?")
-["Alternative", "Indie Rock", "Gangster Rap", "Punk Rock"].each do |text|
-  Choice.create(question: q10, text: text)
+q10 = Question.create(content: "Who created the Teenage Mutant Ninja Turtles?")
+{"Peter Laid & Kevin Eastman": true, "Stan Lee": false, "Alan Moore": false, "Jack Kirby": false}.each do |text, answer|
+  Choice.create(question: q10, text: text, answer: answer)
 end
 
-q11 = Question.create(content: "Which American President is your Favorite?")
-["George Washington", "Thomas Jefferson", "Andrew Jackson", "John F. Kennedy"].each do |text|
-  Choice.create(question: q11, text: text)
+q11 = Question.create(content: "Which city do the turtles call home?")
+{"New York, NY": true, "Baltimore, MD": false, "Los Angeles, CA": false, "Philadelphia, PA": false}.each do |text, answer|
+  Choice.create(question: q11, text: text, answer: answer)
 end
 
-q12 = Question.create(content: "Favorite Card Game")
-["Government", "Black Jack", "Golf", "99", "Rummy"].each do |text|
-  Choice.create(question: q12, text: text)
+q12 = Question.create(content: "Which star from the 'Jackass' TV show voiced a ninja turtle in one of the movies?")
+{"Johnny Knoxville": true, "Bam Margera": false, "Steve-o": false, "Ryan Dunn": false}.each do |text, answer|
+  Choice.create(question: q12, text: text, answer: answer)
 end
 
-q13= Question.create(content: "What would you most likely get arrested for?")
-["Driving way over the speed limit", "Illegally downloading movies or music", "A bar fight", "Buying or Selling illegal drugs"].each do |text|
-  Choice.create(question: q13, text: text)
+q13= Question.create(content: "Which actress DID NOT portray the role of April O'Neil")
+{"Diana Agron": true, "Judith Hoag": false, "Megan Fox": false, "Paige Turco": false}.each do |text, answer|
+  Choice.create(question: q13, text: text, answer: answer)
+end
+
+q14= Question.create(content: "Which famous actor told Judith Hoag about TMNT & urged her to audition for the role of April? (She would go on to land the role of April for the first 'Teenage Mutant Ninja Turtles' motion picture.)")
+{"Robin Williams": true, "Jack Nicholson": false, "Sean Connery": false, "Anthony Edwards": false}.each do |text, answer|
+  Choice.create(question: q14, text: text, answer: answer)
+end
+
+q15= Question.create(content: "Which actor voiced Donatello in the original 1990 Ninja Turtles movie?")
+{"Corey Feldman": true, "Leif Tilden": false, "Jim Raposa": false, "Mitchell Whitfield": false}.each do |text, answer|
+  Choice.create(question: q15, text: text, answer: answer)
+end
+
+q16 = Question.create(content: "Which pizza topping does Michelangelo NOT like?")
+{"Anchovies": true, "Olives": false, "Onions": false, "Pineapple": false}.each do |text, answer|
+  Choice.create(question: q16, text: text, answer: answer)
+end
+
+q17 = Question.create(content: "Elias Koteas won the role of Casey Jones in the first three TMNT movies. Which one of these actors was NOT being considered for the role of Casey Jones?")
+{"Anthony Edwards": true, "Johnny Depp": false, "River Phoenix": false, "Keanu Reeves": false}.each do |text, answer|
+  Choice.create(question: q17, text: text, answer: answer)
+end
+
+q18 = Question.create(content: "Which sport implement does Casey Jones NOT carry aound in his bag of weapons?")
+{"Pool Cue": true, "Baseball Bat": false, "Hockey Stick": false, "Gold Club": false}.each do |text, answer|
+  Choice.create(question: q18, text: text, answer: answer)
+end
+
+q19 = Question.create(content: "Where was most of the 1990's movie actually filmed?")
+{"Wilmington, NC": true, "Tulsa, OK": false, "New York, NY": false, "Los Angeles, CA": false}.each do |text, answer|
+  Choice.create(question: q19, text: text, answer: answer)
+end
+
+q20 = Question.create(content: "In America, we know them as 'Teenage Mutant Ninja Turtles' in Europe they're known as 'Teenage Mutant _______ Turtles' instead")
+{"Hero": true, "Warrior": false, "Fighter": false, "Assassin": false}.each do |text, answer|
+  Choice.create(question: q20, text: text, answer: answer)
+end
+
+q21 = Question.create(content: "Who are Krang's creation of soldiers?")
+{"Rock Soldiers": true, "Slash Soldiers": false, "LeatherHead Soldiers": false, "Mousers": false}.each do |text, answer|
+  Choice.create(question: q21, text: text, answer: answer)
 end
 
 
-# [
+
+# {
 #   {
 #     "question": "What is your favorite color?",
 #     "choice1": "Blue",
@@ -164,4 +205,4 @@ end
   #   "choice4": "99",
   #   "choice5": "Rummy"
   # }
-# ]
+# }
