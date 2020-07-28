@@ -9,52 +9,62 @@ end
 q2 = Question.create(content: "Which hobby is your favorite?")
 ["Meditating", "Reading", "Working Out", "Partying"].each do |text|
   Choice.create(question: q2, text: text)
+end
 
 q3 = Question.create(content: "Which type of Pizza is your favorite?")
 ["Pepperoni & Green Peppers", "Truffle Pizza (Mixed Mushrooms, Vegan Mozzarella, Vegan Fontina, White Truffle Oil)", "Supreme (Olives, Green Pepper, Sausage, Pepperoni, Garlic)", "Pineapple & Ham"].each do |text|
   Choice.create(question: q3, text: text)
+end
 
 q4 = Question.create(content: "Which type of Pet are you most likely to choose?")
 ["Bird", "Salamander/Newt", "I don't want pets", "Ferret"].each do |text|
   Choice.create(question: q4, text: text)
+end
 
 q5 = Question.create(content: "What is your favorite Batman Villan?")
 ["Harvey Dent ('Two Face')", "Edward Nigma ('Riddler')", "Bane", "Joker"].each do |text|
   Choice.create(question: q5, text: text)
+end
 
 q6 = Question.create(content: "Which subject in High School was your favorite?")
 ["Foreign Cultures", "MetaPhysics", "Phys Ed", "Drama"].each do |text|
   Choice.create(question: q6, text: text)
+end
 
 q7 = Question.create(content: "Which is your favorite artist?")
 ["Leonardo Di Vinci", "Donatello", "Raphael", "Michaelangelo"].each do |text|
   Choice.create(question: q7, text: text)
+end
 
 q8 = Question.create(content: "Which TMNT character is most likely to be your sidekick?")
 ["Splinter", "Casey Jones", "Chino (Pizza Delivery Guy)", "April O'Niel"].each do |text|
   Choice.create(question: q8, text: text)
+end
 
 q9 = Question.create(content: "You are approached by an enemy, how do you react?")
 ["Study your opponent & their movements, concentrate on them.", "Quickly strategize how to use your environment around you.", "Welcome an all out brawl.", "Try to charm your enemy to lower tensions."].each do |text|
   Choice.create(question: q9, text: text)
+end
 
 q10 = Question.create(content: "Which type of music would you listen to first?")
 ["Alternative", "Indie Rock", "Gangster Rap", "Punk Rock"].each do |text|
   Choice.create(question: q10, text: text)
+end
 
 q11 = Question.create(content: "Which American President is your Favorite?")
 ["George Washington", "Thomas Jefferson", "Andrew Jackson", "John F. Kennedy"].each do |text|
   Choice.create(question: q11, text: text)
+end
 
 q12 = Question.create(content: "Favorite Card Game")
 ["Government", "Black Jack", "Golf", "99", "Rummy"].each do |text|
   Choice.create(question: q12, text: text)
+end
 
 q13= Question.create(content: "What would you most likely get arrested for?")
 ["Driving way over the speed limit", "Illegally downloading movies or music", "A bar fight", "Buying or Selling illegal drugs"].each do |text|
   Choice.create(question: q13, text: text)
-
-
+end
 
 
 # [
