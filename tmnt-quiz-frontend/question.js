@@ -66,6 +66,11 @@ function populateQuiz() {
     element.innerHTML = choices[i].text;
     element.dataset.value = choices[i].answer;
   }
+  // displays progress for questions (eg... question 2 out of 21)
+  currentQuestionNumber
+    const progQuestion = currentQuestionNumber + 1
+    const progElement = document.getElementById("progress");
+    progElement.innerHTML = "Question " + progQuestion + " of " + questions.length
 }
 
 
