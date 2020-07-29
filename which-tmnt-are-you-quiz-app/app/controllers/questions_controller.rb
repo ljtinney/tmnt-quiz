@@ -12,7 +12,7 @@ class QuestionsController < ApplicationController
   end
 
   def final_image
-
+    :total_correct.to_i
 
 
   end
