@@ -41,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       currentQuestionNumber++
       if(currentQuestionNumber >= questions.length){
-        console.log("Your score was: " + score)
+        // displays score in the DOM
+        const showScore = document.getElementById("score")
+        showScore.innerHTML = "Your score was: " + score
+        // console.log("Your score was: " + score)
       }else{
         populateQuiz()
       }
