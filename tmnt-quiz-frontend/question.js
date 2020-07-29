@@ -21,48 +21,73 @@
 
 // }
 
-class Quiz {
-  constructor(questions) {
-    this.score = 0;
-    this.questions = questions;
-    this.questionIndex = 0;
-  }
-
-  getQuestionsIndex() {
-    return this.questions[this.questionIndex];
-  }
-
-  guess(answer) {
-    if(this.getQuestionIndex().isCorrectAnswer(answer)) {
-      this.score++;
-    }
-    this.questionIndex++;
-  }
-
-  isEnded() {
-    return this.questionIndex === this.questions.length;
-  }
-
-  isCorrectAnswer(choice) {
-    return this.answer === choice;
-  }
-
-}
+let currentQuestionNumber = 0
+let questions = []
+let score = 0
 
 document.addEventListener('DOMContentLoaded', () => {
   fetch("http://localhost:3000/questions")
   .then(resp => resp.json())
-  .then(function(questions) {
-    populateQuiz(questions)
+  .then(function(fetchedQuestions) {
+    questions = fetchedQuestions
+    populateQuiz()
   })
+
+  const buttons = document.getElementsByClassName("choice-button");
+  for(var i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', (event) => {
+      if(event.target.dataset.value == "true"){
+        score++
+      }
+      currentQuestionNumber++
+      if(currentQuestionNumber >= questions.length){
+        console.log("Your score was: " + score)
+      }else{
+        populateQuiz()
+      }
+    })
+  }
 })
 
-function populateQuiz(questions) {
-  let quiz = new Quiz(questions)
-  quiz.getQuestionsIndex()
+function populateQuiz() {
+  // let quiz = new Quiz(questions)
+  console.log(questions)
   // does all the cool stuff
+
+  // shows the question
+  const qElement = document.getElementById("question");
+  qElement.innerHTML = questions[currentQuestionNumber].content
+  // qElement.innerHTML = quiz.getQuestionIndex().text;
+
+  // shows the choices
+  const choices = questions[currentQuestionNumber].choices
+  for(var i = 0; i < choices.length; i++) {
+    const element = document.getElementById("btn" + i);
+    element.innerHTML = choices[i].text;
+    element.dataset.value = choices[i].answer;
+  }
 }
 
+
+// function showQuestion(questions) {
+//   const qElement = document.getElementById("question");
+//   qElement.innerHTML = quiz.getQuestionIndex().text;
+// }
+
+// function choiceOptions() {
+//   const choices = quiz.getQuestionIndex().choices
+//   for(var i = 0; i < choices.length; i++) {u
+//   const element = document.getElementById("choice" + i);
+//   element.innerHTML = choices[i];
+//   guess("btn" + i, choices[i]);
+//   }
+// }
+
+// function Quiz(questions) {
+//   this.score = 0;
+//   this.questions = questions;
+//   this.questionIndex = 0;
+// }
 
 // Quiz.prototype.getQuestionIndex = function() {
 //   return this.questions[this.questionIndex];
@@ -72,6 +97,7 @@ function populateQuiz(questions) {
 //   if(this.getQuestionIndex().isCorrectAnswer(answer)) {
 //       this.score++;
 //   }
+
 //   this.questionIndex++;
 // }
 
@@ -89,26 +115,27 @@ function populateQuiz(questions) {
 //   return this.answer === choice;
 // }
 
-function populate() {
-  if(quiz.isEnded()) {
-      showScores();
-  }
-  else {
-      // show question
-      var questionEl = document.getElementById("question");
-      questionEl.innerHTML = quiz.getQuestionIndex().text;
 
-      // show options
-      var choices = quiz.getQuestionIndex().choices;
-      for(var i = 0; i < choices.length; i++) {
-          var choiceEl = document.getElementById("choice" + i);
-          choiceEl.innerHTML = choices[i];
-          // element.dataset.answer = choices["answer"]
-          guess("btn" + i, choices[i]);
-      }
-      showProgress();
-  }
-};
+// function populate() {
+//   if(quiz.isEnded()) {
+//       showScores();
+//   }
+//   else {
+//       // show question
+//       var element = document.getElementById("question");
+//       element.innerHTML = quiz.getQuestionIndex().text;
+
+//       // show options
+//       var choices = quiz.getQuestionIndex().choices;
+//       for(var i = 0; i < choices.length; i++) {
+//           var element = document.getElementById("choice" + i);
+//           element.innerHTML = choices[i];
+//           guess("btn" + i, choices[i]);
+//       }
+
+//       showProgress();
+//   }
+// };
 
 // function guess(id, guess) {
 //   var button = document.getElementById(id);
@@ -117,6 +144,7 @@ function populate() {
 //       populate();
 //   }
 // };
+
 
 // function showProgress() {
 //   var currentQuestionNumber = quiz.questionIndex + 1;
@@ -130,6 +158,7 @@ function populate() {
 //   var element = document.getElementById("quiz");
 //   element.innerHTML = gameOverHTML;
 // };
+
 
 // create questions here
 // fetch(/questions) to fill out this array
@@ -164,4 +193,4 @@ function populate() {
 // for every question each choice has a hidden data value with a number.
 // that number gets passed on & added to the previous total.
 // previous total starts @ zero.
-// after it's finished cylcing through the questions, it shows the final tallied total which corresponds on a scale to a total of which range is equivalent to which turtle.
+// As they answer questions correctly, increment the results total to eventually show their final score @ the end.
