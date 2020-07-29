@@ -1,26 +1,3 @@
-// const BASE_URL = "http://localhost:3000"
-// const QUESTIONS_URL = `${BASE_URL}/questions`
-// const btn1 = document.getElementById("btn0")
-// const btn2 = document.getElementById("btn1")
-// const btn3 = document.getElementById("btn2")
-// const btn4 = document.getElementById("btn3")
-
-// Before page loads it has already fetched all the questions & choices.
-
-// // When I click on a selection it saves the selection, adds the hidden number total with the previous number total, then fetches the  the next question & it's choices.
-
-// document.addEventListener('click', () => {
-//   userSelection()
-// })
-
-// function userSelection() {
-// const btn1 = document.getElementById("btn0")
-// const btn2 = document.getElementById("btn1")
-// const btn3 = document.getElementById("btn2")
-// const btn4 = document.getElementById("btn3")
-
-// }
-
 let currentQuestionNumber = 0
 let questions = []
 let score = 0
@@ -76,20 +53,6 @@ function populateQuiz() {
     progElement.innerHTML = "Question " + progQuestion + " of " + questions.length
 }
 
-
-// function showQuestion(questions) {
-//   const qElement = document.getElementById("question");
-//   qElement.innerHTML = quiz.getQuestionIndex().text;
-// }
-
-// function choiceOptions() {
-//   const choices = quiz.getQuestionIndex().choices
-//   for(var i = 0; i < choices.length; i++) {u
-//   const element = document.getElementById("choice" + i);
-//   element.innerHTML = choices[i];
-//   guess("btn" + i, choices[i]);
-//   }
-// }
 
 // function Quiz(questions) {
 //   this.score = 0;
@@ -166,39 +129,3 @@ function populateQuiz() {
 //   var element = document.getElementById("quiz");
 //   element.innerHTML = gameOverHTML;
 // };
-
-
-// create questions here
-// fetch(/questions) to fill out this array
-// this endpoint will also need choices for each question
-
-
-// var questions = [
-//   new Question("Which color mask does Mikey wear?", ["Blue", "Purple","Red", "Orange"], "Orange"),
-//   new Question("Question2", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
-//   new Question("Question3", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question4", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question5", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question6", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question7", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question8", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question9", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question10", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question11", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question12", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question13", ["Choice1", "Choice2", "Choice3", "Choice4"], "Choice1"),
-//   new Question("Question14", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1"),
-//   new Question("Question15", ["Choice1", "Choice2","Choice3", "Choice4"], "Choice1")
-// ];
-
-// create quiz
-// var quiz = new Quiz(fetchQuestions());
-
-// display quiz
-// populate();
-
-
-// for every question each choice has a hidden data value with a number.
-// that number gets passed on & added to the previous total.
-// previous total starts @ zero.
-// As they answer questions correctly, increment the results total to eventually show their final score @ the end.
