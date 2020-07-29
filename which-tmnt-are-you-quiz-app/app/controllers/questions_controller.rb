@@ -11,16 +11,18 @@ class QuestionsController < ApplicationController
     )
   end
 
-  def create
-    question = Question.new(content: params[:content])
+  def final_image
+
+
+
   end
 
-  def show
-    question = Question.find_by(id: params[:id])
-    options = {
-      include: [:choices]
-    }
-  end
+  # TurtleImageForScore.new()
+  # // if score is 20 or more use image A
+  # // if score is 15 - 19, use image B
+  # // if score is 10 - 14, use image C
+  # // if score is 9 & under, use image D
+
 end
 
 
