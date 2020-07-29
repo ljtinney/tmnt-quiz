@@ -106,6 +106,12 @@ q21 = Question.create(content: "Who are Krang's creation of soldiers?")
   Choice.create(question: q21, text: text, answer: answer)
 end
 
+q22 = Question.create(content: "In the 'Teenage Mutant Ninja Turtles II: Secret of the Ooze' movie, the turtles discover the ooze that transformed them comes from 'TGRI'. What does this acroynm stand for?")
+{"Techno-Global Research Industries": true, "Translational Genomics Research Institute": false, "Tricon Global Restaurants, Inc.
+": false, "The Global Research Initiative": false}.each do |text, answer|
+  Choice.create(question: q22, text: text, answer: answer)
+end
+
 
 
 # {
