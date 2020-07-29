@@ -29,8 +29,24 @@ class Quiz {
   }
 
   getQuestionsIndex() {
-
+    return this.questions[this.questionIndex];
   }
+
+  guess(answer) {
+    if(this.getQuestionIndex().isCorrectAnswer(answer)) {
+      this.score++;
+    }
+    this.questionIndex++;
+  }
+
+  isEnded() {
+    return this.questionIndex === this.questions.length;
+  }
+
+  isCorrectAnswer(choice) {
+    return this.answer === choice;
+  }
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,6 +62,7 @@ function populateQuiz(questions) {
   quiz.getQuestionsIndex()
   // does all the cool stuff
 }
+
 
 // Quiz.prototype.getQuestionIndex = function() {
 //   return this.questions[this.questionIndex];
@@ -72,26 +89,26 @@ function populateQuiz(questions) {
 //   return this.answer === choice;
 // }
 
-// function populate() {
-//   if(quiz.isEnded()) {
-//       showScores();
-//   }
-//   else {
-//       // show question
-//       var element = document.getElementById("question");
-//       element.innerHTML = quiz.getQuestionIndex().text;
+function populate() {
+  if(quiz.isEnded()) {
+      showScores();
+  }
+  else {
+      // show question
+      var questionEl = document.getElementById("question");
+      questionEl.innerHTML = quiz.getQuestionIndex().text;
 
-//       // show options
-//       var choices = quiz.getQuestionIndex().choices;
-//       for(var i = 0; i < choices.length; i++) {
-//           var element = document.getElementById("choice" + i);
-//           element.innerHTML = choices[i];
-//           // element.dataset.answer = choices["answer"]
-//           guess("btn" + i, choices[i]);
-//       }
-//       showProgress();
-//   }
-// };
+      // show options
+      var choices = quiz.getQuestionIndex().choices;
+      for(var i = 0; i < choices.length; i++) {
+          var choiceEl = document.getElementById("choice" + i);
+          choiceEl.innerHTML = choices[i];
+          // element.dataset.answer = choices["answer"]
+          guess("btn" + i, choices[i]);
+      }
+      showProgress();
+  }
+};
 
 // function guess(id, guess) {
 //   var button = document.getElementById(id);
