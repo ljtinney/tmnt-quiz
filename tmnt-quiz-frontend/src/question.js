@@ -1,6 +1,4 @@
 let currentQuestionNumber = 0
-let currentRankingNumber = 0
-let rankings = []
 let questions = []
 let score = 0
 
