@@ -21820,3 +21820,107 @@ Processing by QuestionsController#final_image as */*
 Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
 
 
+Started GET "/questions" for ::1 at 2020-07-30 10:47:49 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 77ms (Views: 0.2ms | ActiveRecord: 20.0ms | Allocations: 27060)
+
+
+Started GET "/questions/final_image?total_correct=1" for ::1 at 2020-07-30 10:47:56 -0400
+Processing by QuestionsController#final_image as */*
+  Parameters: {"total_correct"=>"1"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/questions" for ::1 at 2020-07-30 10:56:34 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (15.5ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 81ms (Views: 0.2ms | ActiveRecord: 35.5ms | Allocations: 27176)
+
+
