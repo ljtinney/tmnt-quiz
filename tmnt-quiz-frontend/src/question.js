@@ -1,4 +1,6 @@
 let currentQuestionNumber = 0
+let currentRankingNumber = 0
+let rankings = []
 let questions = []
 let score = 0
 
@@ -29,23 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
           showImage()
         })
 
-
-         // display the form
-
         listenToSaveScore()
-        // listen to the form for submit
-        // use preventdefault
-        // confirm it works so far by console.log
-
-        // fetch to send name with the score.
-        // another fetch to get the previous high scores
-
-        // scores controller, need route, controller, endpoint
-        // add migration table (name, score)
-
-
-
-
 
       } else {
         populateQuiz()
@@ -89,10 +75,6 @@ function listenToSaveScore(btn) {
 }
 
 function saveHighScore(playerName, score) {
-  console.log(score)
-  console.log(playerName)
-
-  // to be fetch where it sends scores to database.
   fetch("http://localhost:3000/high_scores/", {
     method: "POST",
     headers: {
@@ -107,7 +89,18 @@ function saveHighScore(playerName, score) {
   .then(resp => resp.json())
   .then(data => {
     console.log(data)
-    // data only accessible here
+
+    for (const highScore of data) {
+      playRankEl = document.createElement("li")
+      // playRankEl.classlist.add("high-score")
+      playRankEl.innerHTML = `
+        ${highScore.name}: ${highScore.score}
+      `
+
+      document.getElementById("player-rank").append(playRankEl)
+    }
+
   })
+
 
 }

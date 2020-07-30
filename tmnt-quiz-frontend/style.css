@@ -22,12 +22,13 @@ body {
 
 .grid {
   width: 700px;
-  height: 1050px;
+  height: 1200px;
   margin: 0 auto;
   background-color: #000000;
   padding: 10px 50px 50px 50px;
   border: 2px solid #cbcbcb;
-
+  font-size: 20px;
+  color: #8FD129;
 }
 
 .grid h1 {
