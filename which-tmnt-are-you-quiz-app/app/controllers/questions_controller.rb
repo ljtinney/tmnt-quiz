@@ -12,19 +12,25 @@ class QuestionsController < ApplicationController
   end
 
   def final_image
-    :total_correct.to_i
+    score = params[:total_correct].to_i
 
+    if score < 10
+      imageUrl = "https://i.pinimg.com/474x/c0/08/3e/c0083ecbd47fc5eeadd14d881e2a1f0d--funny-captions-teenage-mutant-ninja-turtles.jpg"
+      render json: imageUrl.to_json()
 
+    elsif score.between?(9,16)
+      imageUrl = "https://i.pinimg.com/474x/c0/08/3e/c0083ecbd47fc5eeadd14d881e2a1f0d--funny-captions-teenage-mutant-ninja-turtles.jpg"
+      render json: imageUrl.to_json()
+
+    elsif score.between?(15,20)
+      imageUrl = "https://static2.srcdn.com/wordpress/wp-content/uploads/2017/03/Pizza-Time-Teenage-Mutant-Ninja-Turtles.jpg"
+      render json: imageUrl.to_json()
+
+    else score > 19
+      imageUrl = "https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2020/04/teenage-mutant-ninja-turtles-1990.jpg"
+      render json: imageUrl.to_json()
+    end
   end
 
   # TurtleImageForScore.new()
-  # // if score is 20 or more use image A
-  # // if score is 15 - 19, use image B
-  # // if score is 10 - 14, use image C
-  # // if score is 9 & under, use image D
-
 end
-
-
-# with each click add up totals behind the scenes
-# each choice has a hidden point value.

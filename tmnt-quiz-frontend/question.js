@@ -23,17 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         showScore.innerHTML = `Your score was: ` + score  + ` out of ` + questions.length
         console.log("Your score was: " + score)
 
+        // fetches the image associated with the score they received.
         fetch(`http://localhost:3000/questions/final_image?total_correct=${score}`)
         .then(resp => resp.json())
-        .then(imageUrl => {
-           console.log(imageUrl)
-        })
+        .then(imageUrl =>
+          console.log(imageUrl),
 
-        // fetch image that corresponds to score they got.
-        // if score is 20 or more use image A
-        // if score is 15 - 19, use image B
-        // if score is 10 - 14, use image C
-        // if score is 9 & under, use image
+        )
+
 
       } else {
         populateQuiz()
