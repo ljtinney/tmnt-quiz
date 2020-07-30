@@ -37,14 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // use preventdefault
         // confirm it works so far by console.log
 
-        // send name with the score.
-        // fetch where you can add name & high score
+        // fetch to send name with the score.
+        // another fetch to get the previous high scores
 
         // scores controller, need route, controller, endpoint
         // add migration table (name, score)
 
-        // if "high score" (over 16) then save
-        // if score is not over 16, don't save
+
+
 
 
       } else {
@@ -71,7 +71,6 @@ function populateQuiz() {
     const progQuestion = currentQuestionNumber + 1
     const progElement = document.getElementById("progress");
     progElement.innerHTML = "Question " + progQuestion + " of " + questions.length
-
 }
 
 function showImage() {
@@ -85,11 +84,30 @@ function listenToSaveScore(btn) {
   event.preventDefault()
 
   const playerName = document.getElementById("Name").value
-  console.log(score)
   saveHighScore(playerName, score)
   })
 }
 
 function saveHighScore(playerName, score) {
+  console.log(score)
+  console.log(playerName)
+
+  // to be fetch where it sends scores to database.
+  fetch("http://localhost:3000/high_scores/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      "name": playerName,
+      "score": score
+    })
+  })
+  .then(resp => resp.json())
+  .then(data => {
+    console.log(data)
+    // data only accessible here
+  })
 
 }
