@@ -25605,3 +25605,754 @@ Processing by QuestionsController#index as */*
 Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 27060)
 
 
+Started GET "/questions" for ::1 at 2020-07-30 15:37:12 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.5ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.6ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 36.5ms | Allocations: 27062)
+
+
+Started GET "/questions" for ::1 at 2020-07-30 15:37:32 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.7ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 20.4ms | Allocations: 27060)
+
+
+Started GET "/questions" for ::1 at 2020-07-30 15:37:39 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 27060)
+
+
+Started GET "/questions" for ::1 at 2020-07-30 15:42:32 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (15.6ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 60ms (Views: 0.2ms | ActiveRecord: 19.3ms | Allocations: 27062)
+
+
+Started GET "/questions" for ::1 at 2020-07-30 15:42:36 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 68]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 69]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 70]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 71]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 72]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 73]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 74]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 75]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 76]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 77]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 78]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 79]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 80]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 81]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 82]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 83]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 84]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 85]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 86]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 87]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 88]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 0.2ms | ActiveRecord: 19.5ms | Allocations: 27060)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (84.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "which_tmnt_are_you_quiz_app_development"[0m
+  [1m[35m (48.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "which_tmnt_are_you_quiz_app_test"[0m
+  [1m[35m (251.0ms)[0m  [1m[35mCREATE DATABASE "which_tmnt_are_you_quiz_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (106.4ms)[0m  [1m[35mCREATE DATABASE "which_tmnt_are_you_quiz_app_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "choices" CASCADE[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "choices" ("id" bigserial primary key, "text" character varying, "question_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "answer" boolean)[0m
+  [1m[35m (16.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "high_scores" CASCADE[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "high_scores" ("id" bigserial primary key, "name" character varying, "score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions" CASCADE[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200730150508)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200723171146),
+(20200723171322),
+(20200728144448);
+
+[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-30 19:48:56.027862"], ["updated_at", "2020-07-30 19:48:56.027862"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "72feab2421819fdf85965b984d9a66f68b739bd8"], ["created_at", "2020-07-30 19:48:56.035664"], ["updated_at", "2020-07-30 19:48:56.035664"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "choices" CASCADE[0m
+  [1m[35m (28.0ms)[0m  [1m[35mCREATE TABLE "choices" ("id" bigserial primary key, "text" character varying, "question_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "answer" boolean)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "high_scores" CASCADE[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "high_scores" ("id" bigserial primary key, "name" character varying, "score" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "questions" CASCADE[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "questions" ("id" bigserial primary key, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (17.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200730150508)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200723171146),
+(20200723171322),
+(20200728144448);
+
+[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-30 19:48:56.183588"], ["updated_at", "2020-07-30 19:48:56.183588"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (14.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-07-30 19:48:56.201139"], ["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "72feab2421819fdf85965b984d9a66f68b739bd8"], ["created_at", "2020-07-30 19:48:56.228286"], ["updated_at", "2020-07-30 19:48:56.228286"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  [1m[36mChoice Load (0.6ms)[0m  [1m[34mSELECT "choices".* FROM "choices"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.5ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which weapons is Leonardo known for using?"], ["created_at", "2020-07-30 19:48:56.340043"], ["updated_at", "2020-07-30 19:48:56.340043"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.5ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Twin Ninjatos"], ["question_id", 1], ["created_at", "2020-07-30 19:48:56.354846"], ["updated_at", "2020-07-30 19:48:56.354846"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Twin Katanas"], ["question_id", 1], ["created_at", "2020-07-30 19:48:56.371917"], ["updated_at", "2020-07-30 19:48:56.371917"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Twin Swords"], ["question_id", 1], ["created_at", "2020-07-30 19:48:56.384617"], ["updated_at", "2020-07-30 19:48:56.384617"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Twin Machetes"], ["question_id", 1], ["created_at", "2020-07-30 19:48:56.388482"], ["updated_at", "2020-07-30 19:48:56.388482"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which weapons is Raphael known for using?"], ["created_at", "2020-07-30 19:48:56.391960"], ["updated_at", "2020-07-30 19:48:56.391960"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Twin Sai"], ["question_id", 2], ["created_at", "2020-07-30 19:48:56.395463"], ["updated_at", "2020-07-30 19:48:56.395463"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.8ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Sai"], ["question_id", 2], ["created_at", "2020-07-30 19:48:56.399120"], ["updated_at", "2020-07-30 19:48:56.399120"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Twin Daggers"], ["question_id", 2], ["created_at", "2020-07-30 19:48:56.419440"], ["updated_at", "2020-07-30 19:48:56.419440"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Smoke Bombs"], ["question_id", 2], ["created_at", "2020-07-30 19:48:56.422783"], ["updated_at", "2020-07-30 19:48:56.422783"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "1990's 'Teenage Mutant Ninja Turtles' was the highest-grossing independent film of all time. How much did it gross in the DOMESTIC box office?"], ["created_at", "2020-07-30 19:48:56.426311"], ["updated_at", "2020-07-30 19:48:56.426311"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "$122 million"], ["question_id", 3], ["created_at", "2020-07-30 19:48:56.429790"], ["updated_at", "2020-07-30 19:48:56.429790"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "$189 million"], ["question_id", 3], ["created_at", "2020-07-30 19:48:56.433305"], ["updated_at", "2020-07-30 19:48:56.433305"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "$98 million"], ["question_id", 3], ["created_at", "2020-07-30 19:48:56.437207"], ["updated_at", "2020-07-30 19:48:56.437207"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "$135 million"], ["question_id", 3], ["created_at", "2020-07-30 19:48:56.440611"], ["updated_at", "2020-07-30 19:48:56.440611"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which television station does April O'Neil work for?"], ["created_at", "2020-07-30 19:48:56.443912"], ["updated_at", "2020-07-30 19:48:56.443912"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Channel 2"], ["question_id", 4], ["created_at", "2020-07-30 19:48:56.447157"], ["updated_at", "2020-07-30 19:48:56.447157"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.0ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Channel 3"], ["question_id", 4], ["created_at", "2020-07-30 19:48:56.450324"], ["updated_at", "2020-07-30 19:48:56.450324"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Channel 6"], ["question_id", 4], ["created_at", "2020-07-30 19:48:56.469596"], ["updated_at", "2020-07-30 19:48:56.469596"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Channel 7"], ["question_id", 4], ["created_at", "2020-07-30 19:48:56.472903"], ["updated_at", "2020-07-30 19:48:56.472903"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What’s the name of the pizza guy-turned side kick in 'Teenage Mutant Ninja Turtles II: Secret of the Ooze'?"], ["created_at", "2020-07-30 19:48:56.476094"], ["updated_at", "2020-07-30 19:48:56.476094"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Keno"], ["question_id", 5], ["created_at", "2020-07-30 19:48:56.479096"], ["updated_at", "2020-07-30 19:48:56.479096"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Quiona"], ["question_id", 5], ["created_at", "2020-07-30 19:48:56.482290"], ["updated_at", "2020-07-30 19:48:56.482290"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Chino"], ["question_id", 5], ["created_at", "2020-07-30 19:48:56.485710"], ["updated_at", "2020-07-30 19:48:56.485710"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Bruce"], ["question_id", 5], ["created_at", "2020-07-30 19:48:56.488955"], ["updated_at", "2020-07-30 19:48:56.488955"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who wrote the Teenage Mutant Ninja Turtles theme song for the original cartoon series?"], ["created_at", "2020-07-30 19:48:56.492592"], ["updated_at", "2020-07-30 19:48:56.492592"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Stevie Ray Vaughn"], ["question_id", 6], ["created_at", "2020-07-30 19:48:56.495932"], ["updated_at", "2020-07-30 19:48:56.495932"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.8ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Chuck Lorre"], ["question_id", 6], ["created_at", "2020-07-30 19:48:56.499314"], ["updated_at", "2020-07-30 19:48:56.499314"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Mark Mothersbaugh"], ["question_id", 6], ["created_at", "2020-07-30 19:48:56.519485"], ["updated_at", "2020-07-30 19:48:56.519485"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Bob Mothersbaugh"], ["question_id", 6], ["created_at", "2020-07-30 19:48:56.523124"], ["updated_at", "2020-07-30 19:48:56.523124"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "In the comic books, the turtles once had all the same color bandana. Which color bandana was this?"], ["created_at", "2020-07-30 19:48:56.526636"], ["updated_at", "2020-07-30 19:48:56.526636"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Black"], ["question_id", 7], ["created_at", "2020-07-30 19:48:56.529786"], ["updated_at", "2020-07-30 19:48:56.529786"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Blue"], ["question_id", 7], ["created_at", "2020-07-30 19:48:56.533532"], ["updated_at", "2020-07-30 19:48:56.533532"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Purple"], ["question_id", 7], ["created_at", "2020-07-30 19:48:56.537447"], ["updated_at", "2020-07-30 19:48:56.537447"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Red"], ["question_id", 7], ["created_at", "2020-07-30 19:48:56.541263"], ["updated_at", "2020-07-30 19:48:56.541263"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which YEAR did the turtles get their own individually colored bandanas"], ["created_at", "2020-07-30 19:48:56.544823"], ["updated_at", "2020-07-30 19:48:56.544823"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1984"], ["question_id", 8], ["created_at", "2020-07-30 19:48:56.548099"], ["updated_at", "2020-07-30 19:48:56.548099"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1988"], ["question_id", 8], ["created_at", "2020-07-30 19:48:56.551496"], ["updated_at", "2020-07-30 19:48:56.551496"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1989"], ["question_id", 8], ["created_at", "2020-07-30 19:48:56.570631"], ["updated_at", "2020-07-30 19:48:56.570631"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1990"], ["question_id", 8], ["created_at", "2020-07-30 19:48:56.574237"], ["updated_at", "2020-07-30 19:48:56.574237"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "What year was the very first issue of the 'Teenage Mutant Ninja Turtles' comic book published?"], ["created_at", "2020-07-30 19:48:56.577397"], ["updated_at", "2020-07-30 19:48:56.577397"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1984"], ["question_id", 9], ["created_at", "2020-07-30 19:48:56.580789"], ["updated_at", "2020-07-30 19:48:56.580789"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1987"], ["question_id", 9], ["created_at", "2020-07-30 19:48:56.584169"], ["updated_at", "2020-07-30 19:48:56.584169"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1988"], ["question_id", 9], ["created_at", "2020-07-30 19:48:56.587657"], ["updated_at", "2020-07-30 19:48:56.587657"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "1990"], ["question_id", 9], ["created_at", "2020-07-30 19:48:56.591402"], ["updated_at", "2020-07-30 19:48:56.591402"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who created the Teenage Mutant Ninja Turtles?"], ["created_at", "2020-07-30 19:48:56.594907"], ["updated_at", "2020-07-30 19:48:56.594907"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Peter Laid & Kevin Eastman"], ["question_id", 10], ["created_at", "2020-07-30 19:48:56.598841"], ["updated_at", "2020-07-30 19:48:56.598841"], ["answer", true]]
+  [1m[35m (17.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Stan Lee"], ["question_id", 10], ["created_at", "2020-07-30 19:48:56.619638"], ["updated_at", "2020-07-30 19:48:56.619638"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Alan Moore"], ["question_id", 10], ["created_at", "2020-07-30 19:48:56.623236"], ["updated_at", "2020-07-30 19:48:56.623236"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Jack Kirby"], ["question_id", 10], ["created_at", "2020-07-30 19:48:56.642553"], ["updated_at", "2020-07-30 19:48:56.642553"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which city do the turtles call home?"], ["created_at", "2020-07-30 19:48:56.646244"], ["updated_at", "2020-07-30 19:48:56.646244"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.7ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Philadelphia, PA"], ["question_id", 11], ["created_at", "2020-07-30 19:48:56.649608"], ["updated_at", "2020-07-30 19:48:56.649608"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Baltimore, MD"], ["question_id", 11], ["created_at", "2020-07-30 19:48:56.669912"], ["updated_at", "2020-07-30 19:48:56.669912"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Los Angeles, CA"], ["question_id", 11], ["created_at", "2020-07-30 19:48:56.673550"], ["updated_at", "2020-07-30 19:48:56.673550"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "New York, NY"], ["question_id", 11], ["created_at", "2020-07-30 19:48:56.677004"], ["updated_at", "2020-07-30 19:48:56.677004"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which star from the 'Jackass' TV show voiced a ninja turtle in one of the movies?"], ["created_at", "2020-07-30 19:48:56.680091"], ["updated_at", "2020-07-30 19:48:56.680091"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Steve-o"], ["question_id", 12], ["created_at", "2020-07-30 19:48:56.683199"], ["updated_at", "2020-07-30 19:48:56.683199"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Bam Margera"], ["question_id", 12], ["created_at", "2020-07-30 19:48:56.686396"], ["updated_at", "2020-07-30 19:48:56.686396"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Johnny Knoxville"], ["question_id", 12], ["created_at", "2020-07-30 19:48:56.689622"], ["updated_at", "2020-07-30 19:48:56.689622"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Ryan Dunn"], ["question_id", 12], ["created_at", "2020-07-30 19:48:56.693003"], ["updated_at", "2020-07-30 19:48:56.693003"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which actress DID NOT portray the role of April O'Neil"], ["created_at", "2020-07-30 19:48:56.696167"], ["updated_at", "2020-07-30 19:48:56.696167"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.7ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Diana Agron"], ["question_id", 13], ["created_at", "2020-07-30 19:48:56.699291"], ["updated_at", "2020-07-30 19:48:56.699291"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Judith Hoag"], ["question_id", 13], ["created_at", "2020-07-30 19:48:56.719548"], ["updated_at", "2020-07-30 19:48:56.719548"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Megan Fox"], ["question_id", 13], ["created_at", "2020-07-30 19:48:56.722787"], ["updated_at", "2020-07-30 19:48:56.722787"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Paige Turco"], ["question_id", 13], ["created_at", "2020-07-30 19:48:56.726073"], ["updated_at", "2020-07-30 19:48:56.726073"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which famous actor told Judith Hoag about TMNT & urged her to audition for the role of April? (She would go on to land the role of April for the first 'Teenage Mutant Ninja Turtles' motion picture.)"], ["created_at", "2020-07-30 19:48:56.728983"], ["updated_at", "2020-07-30 19:48:56.728983"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Anthony Edwards"], ["question_id", 14], ["created_at", "2020-07-30 19:48:56.732495"], ["updated_at", "2020-07-30 19:48:56.732495"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Jack Nicholson"], ["question_id", 14], ["created_at", "2020-07-30 19:48:56.735897"], ["updated_at", "2020-07-30 19:48:56.735897"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Sean Connery"], ["question_id", 14], ["created_at", "2020-07-30 19:48:56.738943"], ["updated_at", "2020-07-30 19:48:56.738943"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Robin Williams"], ["question_id", 14], ["created_at", "2020-07-30 19:48:56.742052"], ["updated_at", "2020-07-30 19:48:56.742052"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which actor voiced Donatello in the original 1990 Ninja Turtles movie?"], ["created_at", "2020-07-30 19:48:56.745172"], ["updated_at", "2020-07-30 19:48:56.745172"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Jim Raposa"], ["question_id", 15], ["created_at", "2020-07-30 19:48:56.748227"], ["updated_at", "2020-07-30 19:48:56.748227"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (16.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Leif Tilden"], ["question_id", 15], ["created_at", "2020-07-30 19:48:56.751122"], ["updated_at", "2020-07-30 19:48:56.751122"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Corey Feldman"], ["question_id", 15], ["created_at", "2020-07-30 19:48:56.770540"], ["updated_at", "2020-07-30 19:48:56.770540"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Mitchell Whitfield"], ["question_id", 15], ["created_at", "2020-07-30 19:48:56.773728"], ["updated_at", "2020-07-30 19:48:56.773728"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which pizza topping does Michelangelo NOT like?"], ["created_at", "2020-07-30 19:48:56.776772"], ["updated_at", "2020-07-30 19:48:56.776772"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Onions"], ["question_id", 16], ["created_at", "2020-07-30 19:48:56.779817"], ["updated_at", "2020-07-30 19:48:56.779817"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Olives"], ["question_id", 16], ["created_at", "2020-07-30 19:48:56.782953"], ["updated_at", "2020-07-30 19:48:56.782953"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Anchovies"], ["question_id", 16], ["created_at", "2020-07-30 19:48:56.786162"], ["updated_at", "2020-07-30 19:48:56.786162"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Pineapple"], ["question_id", 16], ["created_at", "2020-07-30 19:48:56.789429"], ["updated_at", "2020-07-30 19:48:56.789429"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Elias Koteas won the role of Casey Jones in the first three TMNT movies. Which one of these actors was NOT being considered for the role of Casey Jones?"], ["created_at", "2020-07-30 19:48:56.792492"], ["updated_at", "2020-07-30 19:48:56.792492"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "River Phoenix"], ["question_id", 17], ["created_at", "2020-07-30 19:48:56.795831"], ["updated_at", "2020-07-30 19:48:56.795831"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.7ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Johnny Depp"], ["question_id", 17], ["created_at", "2020-07-30 19:48:56.799565"], ["updated_at", "2020-07-30 19:48:56.799565"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Anthony Edwards"], ["question_id", 17], ["created_at", "2020-07-30 19:48:56.819467"], ["updated_at", "2020-07-30 19:48:56.819467"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Keanu Reeves"], ["question_id", 17], ["created_at", "2020-07-30 19:48:56.822737"], ["updated_at", "2020-07-30 19:48:56.822737"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Which sport implement does Casey Jones NOT carry aound in his bag of weapons?"], ["created_at", "2020-07-30 19:48:56.826316"], ["updated_at", "2020-07-30 19:48:56.826316"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Baseball Bat"], ["question_id", 18], ["created_at", "2020-07-30 19:48:56.829974"], ["updated_at", "2020-07-30 19:48:56.829974"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Pool Cue"], ["question_id", 18], ["created_at", "2020-07-30 19:48:56.833483"], ["updated_at", "2020-07-30 19:48:56.833483"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Hockey Stick"], ["question_id", 18], ["created_at", "2020-07-30 19:48:56.836960"], ["updated_at", "2020-07-30 19:48:56.836960"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Gold Club"], ["question_id", 18], ["created_at", "2020-07-30 19:48:56.840112"], ["updated_at", "2020-07-30 19:48:56.840112"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Where was most of the 1990's movie actually filmed?"], ["created_at", "2020-07-30 19:48:56.843140"], ["updated_at", "2020-07-30 19:48:56.843140"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "New York, NY"], ["question_id", 19], ["created_at", "2020-07-30 19:48:56.846331"], ["updated_at", "2020-07-30 19:48:56.846331"], ["answer", true]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (16.4ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Tulsa, OK"], ["question_id", 19], ["created_at", "2020-07-30 19:48:56.849941"], ["updated_at", "2020-07-30 19:48:56.849941"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Wilmington, NC"], ["question_id", 19], ["created_at", "2020-07-30 19:48:56.869811"], ["updated_at", "2020-07-30 19:48:56.869811"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Los Angeles, CA"], ["question_id", 19], ["created_at", "2020-07-30 19:48:56.873032"], ["updated_at", "2020-07-30 19:48:56.873032"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "In America, we know them as 'Teenage Mutant Ninja Turtles' in Europe they were once known as 'Teenage Mutant _______ Turtles', instead"], ["created_at", "2020-07-30 19:48:56.876332"], ["updated_at", "2020-07-30 19:48:56.876332"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Fighter"], ["question_id", 20], ["created_at", "2020-07-30 19:48:56.894088"], ["updated_at", "2020-07-30 19:48:56.894088"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Warrior"], ["question_id", 20], ["created_at", "2020-07-30 19:48:56.897818"], ["updated_at", "2020-07-30 19:48:56.897818"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Hero"], ["question_id", 20], ["created_at", "2020-07-30 19:48:56.901545"], ["updated_at", "2020-07-30 19:48:56.901545"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Assassin"], ["question_id", 20], ["created_at", "2020-07-30 19:48:56.920567"], ["updated_at", "2020-07-30 19:48:56.920567"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "Who are Krang's creation of soldiers?"], ["created_at", "2020-07-30 19:48:56.924314"], ["updated_at", "2020-07-30 19:48:56.924314"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Foot Clan Soldiers"], ["question_id", 21], ["created_at", "2020-07-30 19:48:56.927785"], ["updated_at", "2020-07-30 19:48:56.927785"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Slash Soldiers"], ["question_id", 21], ["created_at", "2020-07-30 19:48:56.930942"], ["updated_at", "2020-07-30 19:48:56.930942"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Rock Soldiers"], ["question_id", 21], ["created_at", "2020-07-30 19:48:56.934832"], ["updated_at", "2020-07-30 19:48:56.934832"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Mousers"], ["question_id", 21], ["created_at", "2020-07-30 19:48:56.937999"], ["updated_at", "2020-07-30 19:48:56.937999"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mQuestion Create (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("content", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["content", "In the 'Teenage Mutant Ninja Turtles II: Secret of the Ooze' movie, the turtles discover the ooze that transformed them comes from 'TGRI'. What does this acroynm stand for?"], ["created_at", "2020-07-30 19:48:56.941521"], ["updated_at", "2020-07-30 19:48:56.941521"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Techno-Global Research Industries"], ["question_id", 22], ["created_at", "2020-07-30 19:48:56.944796"], ["updated_at", "2020-07-30 19:48:56.944796"], ["answer", true]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Translational Genomics Research Institute"], ["question_id", 22], ["created_at", "2020-07-30 19:48:56.947883"], ["updated_at", "2020-07-30 19:48:56.947883"], ["answer", false]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "Tricon Global Restaurants, Inc.\n"], ["question_id", 22], ["created_at", "2020-07-30 19:48:56.951437"], ["updated_at", "2020-07-30 19:48:56.951437"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChoice Create (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("text", "question_id", "created_at", "updated_at", "answer") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text", "The Global Research Initiative"], ["question_id", 22], ["created_at", "2020-07-30 19:48:56.970764"], ["updated_at", "2020-07-30 19:48:56.970764"], ["answer", false]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/questions" for ::1 at 2020-07-30 15:49:00 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 2]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 3]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 4]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 5]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 6]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 7]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 8]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 9]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 10]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 11]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 12]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 13]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 14]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 15]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (16.4ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 16]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 17]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 18]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 19]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 20]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 21]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 22]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 0.2ms | ActiveRecord: 20.9ms | Allocations: 28440)
+
+
+Started GET "/questions/final_image?total_correct=21" for ::1 at 2020-07-30 15:50:15 -0400
+Processing by QuestionsController#final_image as */*
+  Parameters: {"total_correct"=>"21"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/questions" for ::1 at 2020-07-30 15:51:19 -0400
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (1.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 1]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.4ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 2]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (1.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 3]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 4]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 5]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (15.7ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 6]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 7]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 8]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 9]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 10]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 11]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 12]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (15.5ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 13]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 14]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 15]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 16]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 17]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 18]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 19]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 20]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 21]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = $1[0m  [["question_id", 22]]
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+Completed 200 OK in 546ms (Views: 0.2ms | ActiveRecord: 36.9ms | Allocations: 28322)
+
+
