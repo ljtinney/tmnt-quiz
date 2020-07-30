@@ -18,19 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       currentQuestionNumber++
       if(currentQuestionNumber >= questions.length){
-        // displays score in the DOM
         const showScore = document.getElementById("score")
         showScore.innerHTML = `Your score was: ` + score  + ` out of ` + questions.length
-        console.log("Your score was: " + score)
 
         // fetches the image associated with the score they received.
         fetch(`http://localhost:3000/questions/final_image?total_correct=${score}`)
         .then(resp => resp.json())
         .then(function(imageUrl) {
           image = imageUrl
-          console.log(imageUrl)
           showImage()
         })
+
+
+         // display the form
+
+        listenToSaveScore()
+        // listen to the form for submit
+        // use preventdefault
+        // confirm it works so far by console.log
+
+        // send name with the score.
+        // fetch where you can add name & high score
+
+        // scores controller, need route, controller, endpoint
+        // add migration table (name, score)
+
+        // if "high score" (over 16) then save
+        // if score is not over 16, don't save
 
 
       } else {
@@ -41,13 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function populateQuiz() {
-  // let quiz = new Quiz(questions)
-  // does all the cool stuff
-
   // shows the question
   const qElement = document.getElementById("question");
   qElement.innerHTML = questions[currentQuestionNumber].content
-  // qElement.innerHTML = quiz.getQuestionIndex().text;
 
   // shows the choices
   const choices = questions[currentQuestionNumber].choices
@@ -67,4 +77,19 @@ function populateQuiz() {
 function showImage() {
   const jawn = document.getElementById("image")
   jawn.src = image
+}
+
+function listenToSaveScore(btn) {
+  const saveScoreButton = document.getElementById("btn")
+  saveScoreButton.addEventListener("click", function(event) {
+  event.preventDefault()
+
+  const playerName = document.getElementById("Name").value
+  console.log(score)
+  saveHighScore(playerName, score)
+  })
+}
+
+function saveHighScore(playerName, score) {
+
 }

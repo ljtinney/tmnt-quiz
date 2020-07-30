@@ -22,7 +22,7 @@ body {
 
 .grid {
   width: 700px;
-  height: 900px;
+  height: 1050px;
   margin: 0 auto;
   background-color: #000000;
   padding: 10px 50px 50px 50px;
@@ -48,7 +48,8 @@ body {
 
 .grid #question {
   font-family: "monospace";
-  font-size: 30px;
+  font-size: 24px;
+  font-size: 2vw;
   color: #8FD129;
 }
 
@@ -91,3 +92,6 @@ body {
   max-width:100%;
   height:auto;
 }
+
+
+/* wrap question id div so it has a fixed height, hgt = 200px */
