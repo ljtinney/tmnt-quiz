@@ -92,12 +92,12 @@ q18 = Question.create(content: "Which sport implement does Casey Jones NOT carry
 end
 
 q19 = Question.create(content: "Where was most of the 1990's movie actually filmed?")
-{"New York, NY": true, "Tulsa, OK": false, "Wilmington, NC": false, "Los Angeles, CA": false}.each do |text, answer|
+{"New York, NY": false, "Los Angeles, CA": false, "Wilmington, NC": true, "Tulsa, OK": false}.each do |text, answer|
   Choice.create(question: q19, text: text, answer: answer)
 end
 
 q20 = Question.create(content: "In America, we know them as 'Teenage Mutant Ninja Turtles' in Europe they were once known as 'Teenage Mutant _______ Turtles', instead")
-{"Fighter": false, "Warrior": false, "Hero": true, "Assassin": false}.each do |text, answer|
+{"Fighter": false, "Warrior": false, "Assassin": false, "Hero": true}.each do |text, answer|
   Choice.create(question: q20, text: text, answer: answer)
 end
 

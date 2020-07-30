@@ -1,15 +1,11 @@
-let currentQuestionNumber = 0
-let questions = []
-let score = 0
-
 document.addEventListener('DOMContentLoaded', () => {
   fetch("http://localhost:3000/questions")
   .then(resp => resp.json())
-  .then(function(fetchedQuestions) {
-    questions = fetchedQuestions
-    populateQuiz()
-  })
+  .then(startQuiz)
+})
 
+function startQuiz(questions, score = 0, currentQuestionNumber = 0) {
+  populateQuiz(questions, score)
   const buttons = document.getElementsByClassName("choice-button");
   for(var i = 0; i < buttons.length; i++){
     buttons[i].addEventListener('click', (event) => {
@@ -24,21 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // fetches the image associated with the score they received.
         fetch(`http://localhost:3000/questions/final_image?total_correct=${score}`)
         .then(resp => resp.json())
-        .then(function(imageUrl) {
-          image = imageUrl
-          showImage()
-        })
+        .then(showImage)
 
-        listenToSaveScore()
+        listenToSaveScore(score)
 
       } else {
-        populateQuiz()
+        populateQuiz(questions, currentQuestionNumber)
       }
     })
   }
-})
+}
 
-function populateQuiz() {
+function populateQuiz(questions, currentQuestionNumber) {
   // shows the question
   const qElement = document.getElementById("question");
   qElement.innerHTML = questions[currentQuestionNumber].content
@@ -57,12 +50,12 @@ function populateQuiz() {
     progElement.innerHTML = "Question " + progQuestion + " of " + questions.length
 }
 
-function showImage() {
+function showImage(image) {
   const jawn = document.getElementById("image")
   jawn.src = image
 }
 
-function listenToSaveScore(btn) {
+function listenToSaveScore(score) {
   const saveScoreButton = document.getElementById("btn")
   saveScoreButton.addEventListener("click", function(event) {
   event.preventDefault()
@@ -86,7 +79,6 @@ function saveHighScore(playerName, score) {
   })
   .then(resp => resp.json())
   .then(data => {
-    console.log(data)
 
     for (const highScore of data) {
       playRankEl = document.createElement("li")
