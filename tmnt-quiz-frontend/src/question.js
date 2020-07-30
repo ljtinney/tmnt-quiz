@@ -92,15 +92,10 @@ function saveHighScore(playerName, score) {
 
     for (const highScore of data) {
       playRankEl = document.createElement("li")
-      // playRankEl.classlist.add("high-score")
       playRankEl.innerHTML = `
         ${highScore.name}: ${highScore.score}
       `
-
       document.getElementById("player-rank").append(playRankEl)
     }
-
   })
-
-
 }
