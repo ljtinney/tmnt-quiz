@@ -32,5 +32,4 @@ class QuestionsController < ApplicationController
     end
   end
 
-  # TurtleImageForScore.new()
 end

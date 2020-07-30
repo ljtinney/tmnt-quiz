@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // fetches the image associated with the score they received.
         fetch(`http://localhost:3000/questions/final_image?total_correct=${score}`)
         .then(resp => resp.json())
-        .then(imageUrl =>
-          console.log(imageUrl),
-
-        )
+        .then(function(imageUrl) {
+          image = imageUrl
+          console.log(imageUrl)
+          showImage()
+        })
 
 
       } else {
@@ -61,4 +62,9 @@ function populateQuiz() {
     const progElement = document.getElementById("progress");
     progElement.innerHTML = "Question " + progQuestion + " of " + questions.length
 
+}
+
+function showImage() {
+  const jawn = document.getElementById("image")
+  jawn.src = image
 }

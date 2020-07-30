@@ -22,7 +22,7 @@ body {
 
 .grid {
   width: 700px;
-  height: 500px;
+  height: 900px;
   margin: 0 auto;
   background-color: #000000;
   padding: 10px 50px 50px 50px;
@@ -69,6 +69,11 @@ body {
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
   cursor: pointer;
   background-color: #ED1C24;
+  font-size: 20px;
+  color: black;
+  border: 2px solid #8FD129;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
 }
 
 #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
@@ -78,4 +83,11 @@ body {
 #progress {
   color: #8FD129;
   font-size: 18px;
+}
+
+#image {
+  image-orientation: center;
+  object-fit: cover;
+  max-width:100%;
+  height:auto;
 }
