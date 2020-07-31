@@ -1,17 +1,17 @@
 Question.destroy_all
 Choice.destroy_all
 
-q1 = Question.create(content: "Which weapons is Leonardo known for using?")
+q1 = Question.create(content: "Which weapons does Leonardo use?")
 {"Twin Ninjatos": true, "Twin Katanas": false, "Twin Swords": false, "Twin Machetes": false}.each do |text, answer|
   Choice.create(question: q1, text: text, answer: answer)
 end
 
-q2 = Question.create(content: "Which weapons is Raphael known for using?")
+q2 = Question.create(content: "Which weapons does Raphael use?")
 {"Twin Sai": true, "Sai": false, "Twin Daggers": false, "Smoke Bombs": false}.each do |text, answer|
   Choice.create(question: q2, text: text, answer: answer)
 end
 
-q3 = Question.create(content: "1990's 'Teenage Mutant Ninja Turtles' was the highest-grossing independent film of all time. How much did it gross in the DOMESTIC box office?")
+q3 = Question.create(content: "The 1990's 'Teenage Mutant Ninja Turtles' is the highest-grossing independent film of ALL TIME. How much did it gross in the DOMESTIC box office?")
 {"$122 million": false, "$189 million": false, "$98 million": false, "$135 million": true}.each do |text, answer|
   Choice.create(question: q3, text: text, answer: answer)
 end
@@ -31,17 +31,17 @@ q6 = Question.create(content: "Who wrote the Teenage Mutant Ninja Turtles theme 
   Choice.create(question: q6, text: text, answer: answer)
 end
 
-q7 = Question.create(content: "In the comic books, the turtles once had all the same color bandana. Which color bandana was this?")
+q7 = Question.create(content: "In the comic books, the turtles all had the same color bandana. Which color bandana was this?")
 {"Black": false, "Blue": false, "Purple": false, "Red": true}.each do |text, answer|
   Choice.create(question: q7, text: text, answer: answer)
 end
 
-q8 = Question.create(content: "Which YEAR did the turtles get their own individually colored bandanas")
+q8 = Question.create(content: "Which YEAR did the turtles finally get their own individually colored bandanas?")
 {"1984": false, "1988": true, "1989": false, "1990": false}.each do |text, answer|
   Choice.create(question: q8, text: text, answer: answer)
 end
 
-q9 = Question.create(content: "What year was the very first issue of the 'Teenage Mutant Ninja Turtles' comic book published?")
+q9 = Question.create(content: "Which year was the very first issue of the 'Teenage Mutant Ninja Turtles' comic book published?")
 {"1984": true, "1987": false, "1988": false, "1990": false}.each do |text, answer|
   Choice.create(question: q9, text: text, answer: answer)
 end
